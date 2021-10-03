@@ -1,0 +1,21 @@
+<div>
+    <form [formGroup]="computeForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="n">
+                n:th Fibonacci number
+            </label>
+            <input id="n" type="number" formControlName="n">
+        </div>
+        <div>
+            <label for="type">
+                Algorithm type (TODO)
+            </label>
+            <input id="type" type="text" formControlName="type">
+        </div>
+        <button type="submit">Compute</button>
+    </form>
+    <div>
+        <label>Result: </label>
+        <div>{{ result }}</div>
+    </div>
+</div>
